@@ -154,7 +154,7 @@ class ChestShop extends PluginBase{
 	}
 
 	public static function toOriginalItem(Item $item) : void{
-		$item->removeNamedTagEntry("ChestShop");
+		$item->removeNamedTagEntry("GenShop");
 
 		$lore = $item->getLore();
 		array_pop($lore);
